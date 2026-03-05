@@ -10,6 +10,13 @@
   ],
   "compilerOptions": {
     "baseUrl": ".",
+    "target": "ES2020",
+    "module": "CommonJS",
+    "rootDir": "src",
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
     "paths": {
       "@/*": ["./src/*"]
     }
