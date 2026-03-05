@@ -1,11 +1,13 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const http = require("http");
+// index.js (ES Module version)
+import http from "http";
+
 const PORT = process.env.PORT || 3000;
+
 const server = http.createServer((req, res) => {
-    res.writeHead(200, { "Content-Type": "text/plain" });
-    res.end("Hello World from Vercel + TypeScript!");
+  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.end("Hello World from Render + Node.js!");
 });
+
 server.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
