@@ -1,6 +1,12 @@
-// api/index.ts (or src/index.ts)
-import type { VercelRequest, VercelResponse } from '@vercel/node';
+import express from 'express';
 
-export default function handler(req: VercelRequest, res: VercelResponse) {
-  res.status(200).send('Hello World from Vercel + TypeScript!');
-}
+const app = express();
+const port = process.env.PORT || 3000;
+
+app.get('/', (req, res) => {
+  res.send('Hello World from Render + TypeScript!');
+});
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
