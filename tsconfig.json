@@ -12,13 +12,13 @@
     "baseUrl": ".",
     "outDir": "./dist",
     "rootDir": "./src",
-     "module": "commonjs",
+    "module": "commonjs",
     "target": "es2020",
     "lib": ["es2020"],
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "types": ["node"] 
+    "types": ["node"],
     "paths": {
       "@/*": ["./src/*"]
     }
