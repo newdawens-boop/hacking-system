@@ -1,10 +1,7 @@
 // src/index.ts
 
-import { IncomingMessage, ServerResponse } from "http";
+import { VercelRequest, VercelResponse } from '@vercel/node';
 
-export default function handler(req: IncomingMessage, res: ServerResponse) {
-  res.statusCode = 200;
-  res.setHeader("Content-Type", "text/plain");
-
-  res.end("Hello World from Vercel + TypeScript!");
+export default function handler(req: VercelRequest, res: VercelResponse) {
+  res.status(200).send("Hello World from Vercel + TypeScript!");
 }
